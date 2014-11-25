@@ -1,0 +1,465 @@
+/*Common CSS Transitions
+* Courtesy of  http://tympanus.net/codrops/
+* By Alessio Atezeni
+*/
+.view {
+   width: 350px;
+   height: 300px;
+   margin: auto;
+   float: left;
+   border: 5px solid #fff;
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+   -webkit-box-shadow: 1px 1px 2px #e6e6e6;
+   -moz-box-shadow: 1px 1px 2px #e6e6e6;
+   box-shadow: 1px 1px 2px #e6e6e6;
+   cursor: default;
+   background: #fff url(../images/bgimg.jpg) no-repeat center center;
+}
+.view .mask,.view .content {
+   width: 350px;
+   height: 300px;
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+}
+.view img {
+   display: block;
+   position: relative;
+}
+.view h2 {
+   text-transform: uppercase;
+   color: #fff;
+   text-align: center;
+   position: relative;
+   font-size: 17px;
+   padding: 10px;
+   background: rgba(0, 0, 0, 0.8);
+   margin: 20px 0 0 0;
+}
+.view p {
+   font-family: Georgia, serif;
+   font-style: italic;
+   font-size: 12px;
+   position: relative;
+   color: #fff;
+   padding: 10px 20px 20px;
+   text-align: center;
+}
+.view a.info {
+   display: inline-block;
+   text-decoration: none;
+   padding: 7px 14px;
+   background: #000;
+   color: #fff;
+   text-transform: uppercase;
+   -webkit-box-shadow: 0 0 1px #000;
+   -moz-box-shadow: 0 0 1px #000;
+   box-shadow: 0 0 1px #000;
+}
+.view a.info: hover {
+   -webkit-box-shadow: 0 0 5px #000;
+   -moz-box-shadow: 0 0 5px #000;
+   box-shadow: 0 0 5px #000;
+}
+
+
+/*Transitions
+* Courtesy of  http://tympanus.net/codrops/
+* By Alessio Atezeni
+*/
+
+.view-third img {
+   -webkit-transition: all 0.2s ease-in;
+   -moz-transition: all 0.2s ease-in;
+   -o-transition: all 0.2s ease-in;
+   -ms-transition: all 0.2s ease-in;
+   transition: all 0.2s ease-in;
+}
+.view-third .mask {
+   background-color: rgba(0,0,0,0.6);
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transform: translate(460px, -100px) rotate(180deg);
+   -moz-transform: translate(460px, -100px) rotate(180deg);
+   -o-transform: translate(460px, -100px) rotate(180deg);
+   -ms-transform: translate(460px, -100px) rotate(180deg);
+   transform: translate(460px, -100px) rotate(180deg);
+   -webkit-transition: all 0.2s 0.4s ease-in-out;
+   -moz-transition: all 0.2s 0.4s ease-in-out;
+   -o-transition: all 0.2s 0.4s ease-in-out;
+   -ms-transition: all 0.2s 0.4s ease-in-out;
+   transition: all 0.2s 0.4s ease-in-out;
+}
+.view-third h2 {
+   -webkit-transform: translateY(-100px);
+   -moz-transform: translateY(-100px);
+   -o-transform: translateY(-100px);
+   -ms-transform: translateY(-100px);
+   transform: translateY(-100px);
+   -webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -ms-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+}
+.view-third p {
+   -webkit-transform: translateX(300px) rotate(90deg);
+   -moz-transform: translateX(300px) rotate(90deg);
+   -o-transform: translateX(300px) rotate(90deg);
+   -ms-transform: translateX(300px) rotate(90deg);
+   transform: translateX(300px) rotate(90deg);
+   -webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -ms-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+}
+.view-third a.info {
+   -webkit-transform: translateY(-200px);
+   -moz-transform: translateY(-200px);
+   -o-transform: translateY(-200px);
+   -ms-transform: translateY(-200px);
+   transform: translateY(-200px);
+   -webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -ms-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+}
+.view-third:hover .mask {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   -webkit-transition-delay: 0s;
+   -moz-transition-delay: 0s;
+   -o-transition-delay: 0s;
+   -ms-transition-delay: 0s;
+   transition-delay: 0s;
+   -webkit-transform: translate(0px, 0px);
+   -moz-transform: translate(0px, 0px);
+   -o-transform: translate(0px, 0px);
+   -ms-transform: translate(0px, 0px);
+   transform: translate(0px, 0px);
+}
+.view-third:hover h2 {
+   -webkit-transform: translateY(0px);
+   -moz-transform: translateY(0px);
+   -o-transform: translateY(0px);
+   -ms-transform: translateY(0px);
+   transform: translateY(0px);
+   -webkit-transition-delay: 0.5s;
+   -moz-transition-delay: 0.5s;
+   -o-transition-delay: 0.5s;
+   -ms-transition-delay: 0.5s;
+   transition-delay: 0.5s;
+}
+.view-third:hover p {
+   -webkit-transform: translateX(0px) rotate(0deg);
+   -moz-transform: translateX(0px) rotate(0deg);
+   -o-transform: translateX(0px) rotate(0deg);
+   -ms-transform: translateX(0px) rotate(0deg);
+   transform: translateX(0px) rotate(0deg);
+   -webkit-transition-delay: 0.4s;
+   -moz-transition-delay: 0.4s;
+   -o-transition-delay: 0.4s;
+   -ms-transition-delay: 0.4s;
+   transition-delay: 0.4s;
+}
+.view-third:hover a.info {
+   -webkit-transform: translateY(0px);
+   -moz-transform: translateY(0px);
+   -o-transform: translateY(0px);
+   -ms-transform: translateY(0px);
+   transform: translateY(0px);
+   -webkit-transition-delay: 0.3s;
+   -moz-transition-delay: 0.3s;
+   -o-transition-delay: 0.3s;
+   -ms-transition-delay: 0.3s;
+   transition-delay: 0.3s;
+}
+
+
+
+
+
+
+
+
+/* Color Palette
+
+#1B4066 = dark blue
+
+#45C3DD = light blue
+
+#FFFFFF = white
+
+#CEC7C5 = light grey
+
+#95979C = dark grey*/
+
+a{
+text-decoration:none;
+}
+
+
+body {
+font-family: "HelveticaNeue-Light";
+font-size: 1em;
+line-height: 1.4;
+letter-spacing: 1px;
+padding: 60px;
+}
+
+
+h1 {
+font-family: "HelveticaNeue-Light"; 
+font-weight: 100;
+font-size: 50px;
+letter-spacing: 3px;
+text-align: center;
+}
+
+h2 {
+
+}
+
+
+
+logo {
+width:100px
+float:left;
+
+}
+
+
+nav {
+	background-color: #1B4066;
+    padding-left: 20px;
+    padding-right: 20px;
+    right: 0px;
+    left: 0px;    
+    margin: 0 auto;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    position:fixed;
+
+	}
+	
+img {
+display: inline;
+}
+
+ul {
+list-style-type: none;
+margin:0;
+padding:0;
+}
+
+li {
+display:inline;
+}
+
+footer {
+	background-color: #1B4066;
+	color:white;
+    padding-left: 20px;
+    padding-right: 20px;
+    right: 0px;
+    left: 0px;    
+    margin: 0 auto;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    height: 100px;
+    clear:both;
+}
+
+html, body {
+height: 100%
+}
+
+
+/*Div IDs*/
+
+#copyright {
+float: right;
+padding: 30px;
+}
+#wrapper {
+width: 90%;
+margin: auto;
+}
+
+#schoolworkContainer {
+width: 600px;
+float:left
+}
+
+#jobsContainer {
+float:right
+}
+
+#capstone {
+text-align: center;
+}
+
+#slideshow {
+text-align:center;
+}
+
+
+#welcome {
+font-size: 100px;
+letter-spacing:40px;
+}
+
+
+
+#about {
+    width: 80%;
+
+}
+
+#about p {
+	text-indent: 30px;
+}
+
+#skillsabout {
+text-align: left;
+}
+
+
+#reflection p {
+text-indent: 50px;
+}
+
+
+#right {
+max-width: 50%;
+float: right;
+text-align: center;
+}
+
+#left {
+max-width: 50%;
+margin: auto;
+float: left;
+}
+
+#academics {
+padding: 40px;
+}
+
+#resume {
+margin: 0 auto;
+text-align: center;
+
+}
+
+
+/*Class IDs*/
+
+/*Nav bar */
+.navigationText {
+	color: white;
+	display: inline;
+	letter-spacing:3px;
+	padding: 3%;
+	font-size: 17px;
+	}
+	
+.home {
+	color: white;
+	display: inline;
+	font-family: "HelveticaNeue-Light";
+	letter-spacing:3px;
+	cursor:pointer;
+	font-size: 80px;
+	letter-spacing: 25px;
+	}
+
+nav 
+.navigationText 
+.home {
+    letter-spacing: 34px;
+    font-size: 21px;
+    margin-right: 25px;
+}
+
+.portfolioContent {
+background-color: black;
+color: white;
+font-weight: 1;
+padding: 50px;
+}
+
+
+
+.sidebar {
+width: 800px;
+}
+
+
+.portofolioContent {
+color:white
+font-size: 75px;
+text-align:center;
+}
+
+.fashionEdits {
+display: inline;
+max-width: 50px;
+}
+
+.resumeLink {
+color: black;
+}
+
+
+/*Selectors */
+
+a
+a:link {
+color: #FFFFFF;
+}
+
+a:visited {
+color: #FFFFFF;
+}
+
+a .navigationText :hover {
+}
+
+a:active {
+color: #CEC7C5 = light grey
+
+}
+
+
+/* masons help */
+
+#skills {
+max-width: 60%;
+margin-left: 5%;
+float: right;
+text-align: center;
+}
+
+#about {
+max-width: 30%;
+margin: auto;
+float: left;
+}
+
+
+
+
+
+
+
+
